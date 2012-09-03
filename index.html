@@ -34,10 +34,11 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-	<script type="text/javascript"
+	<!--script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?sensor=false&region=AU">
-    </script>
-
+    </script-->
+    <script type='text/javascript' src='http://maps.google.com/maps/api/js?sensor=false&libraries=places&ver=1.6'></script>
+	<script type="text/javascript" src="js/markerclusterer.js"></script>
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="../assets/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
@@ -57,7 +58,7 @@
             <span class="icon-bar"></span>
           </a>
           <form class="navbar-search pull-left">
-    			<input type="text" class="search-query" placeholder="Address">
+    			<input type="text" class="search-query" id="txtMyAddress" placeholder="Address">
     			<a class="btn btn-inverse" href="#"><i class="icon-screenshot icon-white"></i></a>
           </form>
           <div class="nav-collapse collapse">
@@ -151,9 +152,16 @@
                   </div>
                   <div class="accordion-body in collapse" id="collapseOne" style="height: auto;">
                     <div class="accordion-inner">
-						<div class="wall hero-unit" id="map_canvas">
-          						<h1>Test</h1>
-          				 </div>        
+                    	<div style="">
+						<box class="span3">Title 1</box>
+						<box class="span3">Title 1</box>
+						<box class="span3">Title 1</box>
+						<box class="span3">Title 1</box>
+						<box class="span3">Title 1</box>
+						<box class="span3">Title 1</box>
+						<box class="span3">Title 1</box>
+						<box class="span3">Title 1</box>
+						</div>    
           			 </div>
                   </div>
                 </div>
